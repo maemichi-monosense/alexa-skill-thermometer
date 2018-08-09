@@ -12,6 +12,7 @@ const skillName = "Thermometer";
 // singleton
 let skill: Alexa.Skill;
 
+// noinspection JSUnusedGlobalSymbols, JSUnusedLocalSymbols
 export const handler: Handler = (
   event: RequestEnvelope,
   _ctx: Context,
