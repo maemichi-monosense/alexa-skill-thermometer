@@ -70,3 +70,6 @@ jspm_packages
 
 # Webpack directories
 .webpack
+
+# ts compilation
+/out/
