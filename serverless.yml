@@ -11,6 +11,7 @@ provider:
   memorySize: 128 # min
   iamManagedPolicies:
     - arn:aws:iam::aws:policy/AmazonDynamoDBReadOnlyAccess
+  versionFunctions: false # unsupported by Alexa
 
 custom:
   webpack:
@@ -21,3 +22,5 @@ functions:
     handler: handler.handler
     events:
       - alexaSkill: alexa-appkit.amazon.com # unspecified
+    environment:
+      TZ: Asia/Tokyo
